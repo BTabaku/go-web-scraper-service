@@ -2,6 +2,24 @@
 
 A highly efficient, scalable, and modular web scraper built with Go. This service leverages modern tools and best practices to scrape web pages and store data in a PostgreSQL database. It supports proxy-based requests for regional access and is containerized for deployment in cloud environments.
 
+```
+web_scraper_go/
+├── cmd/
+│   └── main.go                # Entry point of the application
+├── pkg/
+│   ├── api/
+│   │   └── crawler.go         # Crawler logic
+│   ├── config/
+│   │   └── config.go          # Configuration management
+│   ├── database/
+│   │   └── database.go        # Database interaction
+│   ├── logger/
+│   │   └── logger.go          # Centralized logging
+├── go.mod                     # Go module definition
+├── .env                       # Environment variables
+└── README.md                  # Documentation
+```
+
 ---
 
 ## Features
@@ -13,8 +31,6 @@ A highly efficient, scalable, and modular web scraper built with Go. This servic
 - **Dockerized Deployment**: Easily deployable on cloud platforms using Docker and Kubernetes.
 
 ---
-
-## Getting Started
 
 ### Prerequisites
 
